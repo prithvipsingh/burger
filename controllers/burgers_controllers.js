@@ -1,14 +1,15 @@
-// Import burger.js 
-
-var burger = require ('../models/burger.js');
+// Import (require) burger.js
+// =============================================================================
+var burger = require('../models/burger.js');
 var express = require('express');
 
-// Create app router 
 
+// Create app router
+// =============================================================================
 var router = express.Router();
 
 
-// Route -- GET - SELECT ALL 
+// GET - selectAll
 router.get('/', function (req, res) {
 	res.redirect('/burgers');
 });
@@ -20,13 +21,17 @@ router.get('/burgers', function (req, res) {
 		res.render('index', hbsObject);
 	});
 });
-// Route -- POST -- Insert 
+
+
+// POST - insertOne
 router.post('/burgers/create', function (req, res) {
 	burger.insertOne(['burger_name'], [req.body.name], function () {
 		res.redirect('/burgers');
 	});
 });
-// Route -- PUT -- Update
+
+
+// PUT - updateOne
 router.put('/burgers/update/:id', function (req, res) {
 	var condition = 'id = ' + req.params.id;
 
@@ -36,7 +41,8 @@ router.put('/burgers/update/:id', function (req, res) {
 		res.redirect('/burgers');
 	});
 });
-// Route -- DELET
+
+// DELETE - deleteOne
 router.delete('/burgers/delete/:id', function (req, res) {
 	var condition = 'id = ' + req.params.id;
 

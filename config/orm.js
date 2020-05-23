@@ -1,6 +1,6 @@
 // Import (require) connection.js
 // ==============================================================================
-var connection = require("../config/connection.js");
+var connection = require('../config/connection.js');
 
 
 // Functions that takes inputs and conditions
