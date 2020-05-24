@@ -10,9 +10,9 @@ else {
 	var connection = mysql.createConnection({
 		port: 3306,
 		host: 'localhost',
-		user: 'root',
-		password: 'Pps1187#deora',
-		database: 'burgers_db'
+		user: 'd8qkv39fpqcprj37',
+		password: 'dsngxyrr1i40u8jg',
+		database: 'a8j3dtjm6f710f6h'
 	});
 }
 
