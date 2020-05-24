@@ -6,7 +6,7 @@ var mysql = require('mysql');
 
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-var router = require("./controllers/burgers_controllers");
+
 
 // SETUP EXPRESS SERVER
 // ==============================================
@@ -27,7 +27,7 @@ app.set('view engine', 'handlebars');
 
 
 // Import and use router from controller.js file
-
+var router = require('./controllers/burgers_controllers.js');
 app.use('/', router);
 
 
