@@ -1,8 +1,9 @@
 ## Homework 13 Node Express Handlebars
 ## Eat Da Burger 
-## Heroku- Deployement 
-https://serene-tundra-79433.herokuapp.com/burgers
 In this assignment, I will  create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). I am going to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
+
+## Deployed Application Link:
+https://serene-tundra-79433.herokuapp.com/burgers
 
 ### User Story 
 
@@ -14,6 +15,10 @@ In this assignment, I will  create a burger logger with MySQL, Node, Express, Ha
 
 *  app will store every burger in a database, whether devoured or not.
 
+The following image demonstrates the application functionality:
+
+![eat da burger demo](./public/assets/img/eatdaburger1.png)
+![eat da burger demo](./public/assets/img/eatdaburger2.png)
 ## Instructions
 I used following gudeline 
 
